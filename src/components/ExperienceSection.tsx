@@ -6,12 +6,12 @@ const ExperienceSection = () => {
     <section className="relative container mx-auto px-4 mt-20">
       {/* Section Title */}
       <h1 className="text-4xl font-bold text-center text-white mb-8">
-        Experience
+        Experiences
       </h1>
 
       {/* Section Description */}
       <p className="text-lg text-center text-gray-400 mb-12">
-        My work experience as a software engineer and working on different
+        My work experiences as a software engineer and working on different
         companies and projects.
       </p>
 
