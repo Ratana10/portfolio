@@ -3,7 +3,6 @@ import { skills } from "../db/data";
 import Icon from "./Icon";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import SocialMediaButtons from "./SocialMediaButtons";
 import ContactSection from "./ContactSection";
 
 const Hero = () => {

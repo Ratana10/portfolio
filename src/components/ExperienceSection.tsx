@@ -1,9 +1,6 @@
-import { Experience } from "../types";
 import ExperienceCard from "./ExperienceCard";
 import { experiences } from "../db/data";
-interface Props {
-  experience: Experience;
-}
+
 const ExperienceSection = () => {
   return (
     <section className="relative container mx-auto px-4 mt-20">

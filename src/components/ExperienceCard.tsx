@@ -7,7 +7,7 @@ interface Props {
   isEven: boolean;
 }
 
-const ExperienceCard: React.FC<Props> = ({ experience, isEven }) => {
+const ExperienceCard: React.FC<Props> = ({ experience, isEven }: Props) => {
   const controls = useAnimation();
   const cardRef = useRef(null);
 

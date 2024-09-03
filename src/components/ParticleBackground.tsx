@@ -1,7 +1,7 @@
-import{ MoveDirection, OutMode, type Container, type IOptions, type ISourceOptions, type RecursivePartial } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
+import { Container, ISourceOptions } from "@tsparticles/engine";
 
 
 const ParticleBackground = () => {
