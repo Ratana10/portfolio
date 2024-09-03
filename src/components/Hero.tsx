@@ -3,6 +3,8 @@ import { skills } from "../db/data";
 import Icon from "./Icon";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import SocialMediaButtons from "./SocialMediaButtons";
+import ContactSection from "./ContactSection";
 
 const Hero = () => {
   const subTitleRef = useRef(null);
@@ -35,7 +37,7 @@ const Hero = () => {
         {/* Text Column */}
         <div className="order-2 md:order-1 space-y-6">
           <h1 className="text-5xl font-extrabold mb-4 leading-tight">
-            Hi, I am Ratana 
+            Hi, I am Ratana
           </h1>
           <p className="text-2xl text-white font-bold">
             I am junior <span className="text-purple-400" ref={subTitleRef}></span>
@@ -47,9 +49,7 @@ const Hero = () => {
             growth mindset, I am ready to make a meaningful contribution and
             achieve great things.
           </p>
-          <button className="mt-4 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white py-3 px-6 rounded-full shadow-lg transform transition-transform hover:scale-105">
-            Check Resume
-          </button>
+          <ContactSection />
         </div>
       </div>
 

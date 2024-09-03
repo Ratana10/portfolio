@@ -13,14 +13,15 @@ const navbars = [
     label: "Experience",
     href: "#experience",
   },
-  {
-    label: "Education",
-    href: "#education",
-  },
+
 ];
 
-export default function Header() {
+// {
+//   label: "Education",
+//   href: "#education",
+// },
 
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -32,14 +33,15 @@ export default function Header() {
       <nav className="border-gray-200 lg:px-6 py-2.5 container mx-auto px-4">
         <div className="flex flex-wrap justify-between items-center max-w-screen-xl">
           <a href="#" className="flex items-center">
-            <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
-              Ratana
+            <span className="self-center text-3xl font-semibold whitespace-nowrap ">
+            <span className="text-[#FFAF00]">Ratana</span> 
             </span>
           </a>
           <div className="flex items-center lg:order-2">
             <a
-              href="#"
-              className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+              href="https://github.com/Ratana10"
+              target="_blank"
+              className="text-white bg-gradient-to-r from-purple-500 to-indigo-500 py-1 px-4 rounded-full  hover:from-purple-600 hover:to-indigo-600 transform transition-transform hover:scale-105"
             >
               Github
             </a>
