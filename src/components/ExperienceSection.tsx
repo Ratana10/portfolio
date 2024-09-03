@@ -1,4 +1,3 @@
-import React from "react";
 import { Experience } from "../types";
 import ExperienceCard from "./ExperienceCard";
 import { experiences } from "../db/data";
@@ -7,7 +6,7 @@ interface Props {
 }
 const ExperienceSection = () => {
   return (
-    <section className="relative container mx-auto px-4 mt-5">
+    <section className="relative container mx-auto px-4 mt-20">
       {/* Section Title */}
       <h1 className="text-4xl font-bold text-center text-white mb-8">
         Experience

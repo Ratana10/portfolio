@@ -19,5 +19,6 @@ export interface Education{
   institution: string;
   course: string;
   duration: string;
+  logo: string;
   topics: string[];
 }

@@ -74,15 +74,15 @@ export const otherSkills: IconType[] = [
 export const skills: IconType[] = [
   {
     name: "Blockchain",
-    src: "other/blockchain.svg",
+    src: "other/blockchain.png",
   },
   {
     name: "Crypto",
-    src: "other/bitcoin.svg",
+    src: "other/cryptocurrency.png",
   },
   {
     name: "AWS",
-    src: "other/aws.svg",
+    src: "other/aws.png",
   },
   {
     name: "Nestjs",
@@ -106,7 +106,7 @@ export const skills: IconType[] = [
   },
   {
     name: "Mongodb",
-    src: "db/mongodb.svg",
+    src: "db/mongodb.png",
   },
   {
     name: "Java",
@@ -119,6 +119,10 @@ export const skills: IconType[] = [
   {
     name: "Javascript",
     src: "basic/js.svg",
+  },
+  {
+    name: "Linux",
+    src: "other/linux.svg",
   },
 ];
 
@@ -247,12 +251,14 @@ export const educations: Education[] = [
     institution: "KHMER CODE ACADEMY",
     course: "NEXTJS",
     duration: "May - July 2024",
+    logo: "",
     topics: ["Front-end Development", "Nextjs", "Tailwind CSS"],
   },
   {
     institution: "PISETH JAVA",
     course: "JAVA ADVANCED",
     duration: "Oct - May 2024",
+    logo: "",
     topics: [
       "Microservice",
       "Docker Deployment",
@@ -267,6 +273,7 @@ export const educations: Education[] = [
     institution: "SAMSUNG",
     course: "PYTHON",
     duration: "2021 - 2022",
+    logo: "",
     topics: [
       "Python Basic",
       "Data Structures and Algorithms",
