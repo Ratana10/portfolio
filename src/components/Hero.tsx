@@ -1,5 +1,4 @@
 import profilePic from "/RatanaIMG.png";
-import RatanaPic from "/Ratana.jpg";
 import { skills } from "../db/data";
 import Icon from "./Icon";
 import { useEffect, useRef } from "react";
