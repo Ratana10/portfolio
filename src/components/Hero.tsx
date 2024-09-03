@@ -3,6 +3,7 @@ import { skills } from "../db/data";
 import Icon from "./Icon";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import InfiniteCarousel from "./InfiniteCarousel";
 const Hero = () => {
   const subTitleRef = useRef(null);
 
@@ -68,6 +69,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
+
     </section>
   );
 };

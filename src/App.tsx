@@ -1,4 +1,5 @@
 import "./App.css";
+import BlockchainAnimation from "./components/BlockchainAnimation";
 import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Hero />
         <ExperienceSection />
+        <BlockchainAnimation />
         <Footer />
       </div>
     </div>

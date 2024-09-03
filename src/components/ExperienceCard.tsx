@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Experience } from "../types";
+import { motion, useAnimation } from "framer-motion";
 
 interface Props {
   experience: Experience;
@@ -7,9 +8,51 @@ interface Props {
 }
 
 const ExperienceCard: React.FC<Props> = ({ experience, isEven }) => {
+  const controls = useAnimation();
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          controls.start({
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: { duration: 1, ease: [0.16, 1, 0.3, 1] },
+          });
+        } else {
+          controls.start({
+            opacity: 0,
+            y: 100,
+            scale: 0.95,
+            transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+          });
+        }
+      },
+      {
+        threshold: 0.1, // Trigger the animation when 10% of the card is visible
+      }
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, [controls]);
+
   return (
-    <div
+    <motion.div
       className={`flex items-center justify-${isEven ? "start" : "end"} w-full`}
+      ref={cardRef}
+      initial={{ opacity: 0, y: 50 }}
+      animate={controls}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div
         className={`relative flex ${
@@ -35,7 +78,7 @@ const ExperienceCard: React.FC<Props> = ({ experience, isEven }) => {
             </div>
           </div>
           <p className="text-gray-300 mb-4">{experience.duration}</p>
-          
+
           {/* Loop through each project */}
           <div className="space-y-4">
             {experience.projects.map((project, idx) => (
@@ -59,7 +102,7 @@ const ExperienceCard: React.FC<Props> = ({ experience, isEven }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
