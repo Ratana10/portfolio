@@ -3,13 +3,13 @@ import { skills } from "../db/data";
 import Icon from "./Icon";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import InfiniteCarousel from "./InfiniteCarousel";
+
 const Hero = () => {
   const subTitleRef = useRef(null);
 
   useEffect(() => {
     const subtitleOptions = {
-      strings: ["Software Developer", "IT Specialist", "Java Developer"],
+      strings: ["Software Developer", "Java Developer", "Blockchain Developer"],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
@@ -35,10 +35,10 @@ const Hero = () => {
         {/* Text Column */}
         <div className="order-2 md:order-1 space-y-6">
           <h1 className="text-5xl font-extrabold mb-4 leading-tight">
-            Hi, I am Ratana
+            Hi, I am Ratana 
           </h1>
           <p className="text-2xl text-white font-bold">
-            I am a <span className="text-purple-400" ref={subTitleRef}></span>
+            I am junior <span className="text-purple-400" ref={subTitleRef}></span>
           </p>
           <p className="text-lg">
             I am a motivated and versatile individual, always eager to take on
@@ -54,7 +54,7 @@ const Hero = () => {
       </div>
 
       {/* Skill */}
-      <div className="text-center">
+      <div id="#skill" className="text-center">
         <h1 className="mt-20 font-extrabold text-5xl">Skills</h1>
         <p className="text-lg text-gray-400 mt-4">
           Here are some of technologies I've been working with

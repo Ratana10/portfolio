@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="bg-gray-800">
       <ParticleBackground />
-      <div className="container mx-auto min-h-screen px-4">
+      <div className="container mx-auto min-h-screen px-4 bg-gray-800">
         <Header />
         <Hero />
         <ExperienceSection />
