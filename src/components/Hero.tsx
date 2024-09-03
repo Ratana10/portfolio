@@ -1,4 +1,5 @@
 import profilePic from "/RatanaIMG.png";
+import RatanaPic from "/Ratana.jpg";
 import { skills } from "../db/data";
 import Icon from "./Icon";
 import { useEffect, useRef } from "react";
@@ -28,8 +29,8 @@ const Hero = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Photo Column  */}
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
-          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden  ">
-            <img src={profilePic} alt="photo" />
+          <div className="relative w-48 h-60 md:w-64 md:h-64 overflow-hidden border  rounded-2xl py-2">
+            <img src={profilePic} alt="photo" className=""/>
           </div>
         </div>
 
