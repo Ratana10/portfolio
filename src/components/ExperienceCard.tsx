@@ -1,34 +1,66 @@
-import React from 'react'
-import { Experience } from '../types';
+import React from "react";
+import { Experience } from "../types";
 
-interface Props{
-  experience: Experience
+interface Props {
+  experience: Experience;
+  isEven: boolean;
 }
 
-const ExperienceCard = ({ experience }: Props) => {
+const ExperienceCard: React.FC<Props> = ({ experience, isEven }) => {
   return (
-    <div className="relative flex items-center bg-gray-900 rounded-lg shadow-lg p-6 my-4">
-      <div className="absolute -left-12 top-6 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center">
-        <img src={experience.logo} alt={`${experience.company} logo`} className="w-10 h-10" />
-      </div>
-      <div className="ml-16">
-        <h2 className="text-xl font-bold text-white">{experience.role}</h2>
-        <h3 className="text-md text-gray-400">{experience.company}</h3>
-        <p className="text-sm text-gray-400 mb-2">{experience.duration}</p>
-        <p className="text-gray-300">{experience.description}</p>
-        <div className="mt-2">
-          <h4 className="text-sm font-bold text-gray-400">Skills:</h4>
-          <ul className="flex flex-wrap space-x-2">
-            {experience.skills.map((skill, index) => (
-              <li key={index} className="text-sm text-gray-200">
-                • {skill}
-              </li>
+    <div
+      className={`flex items-center justify-${isEven ? "start" : "end"} w-full`}
+    >
+      <div
+        className={`relative flex ${
+          isEven
+            ? "justify-end md:justify-start"
+            : "justify-start md:justify-end"
+        } items-center w-full md:w-1/2`}
+      >
+        <div className="bg-gray-900 p-6 rounded-lg shadow-lg md:mx-6 ml-6">
+          <div className="flex items-center mb-4">
+            <img
+              src={experience.logo}
+              alt={`${experience.company} Logo`}
+              className="w-12 h-12 rounded-full mr-4 ring-2 ring-white"
+            />
+            <div>
+              <h3 className="text-xl font-semibold text-white">
+                {experience.role}
+              </h3>
+              <span className="text-sm text-gray-400">
+                {experience.company}
+              </span>
+            </div>
+          </div>
+          <p className="text-gray-300 mb-4">{experience.duration}</p>
+          
+          {/* Loop through each project */}
+          <div className="space-y-4">
+            {experience.projects.map((project, idx) => (
+              <div key={idx}>
+                <h4 className="text-lg font-semibold text-[#FFAF00]">
+                  - {project.name}
+                </h4>
+                <p className="text-gray-400 mb-2">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, techIdx) => (
+                    <span
+                      key={techIdx}
+                      className="bg-[#7C00FE] text-white text-sm px-2 py-1 rounded"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default ExperienceCard
+export default ExperienceCard;

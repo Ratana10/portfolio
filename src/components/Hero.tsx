@@ -1,22 +1,12 @@
-import profilePic from "../assets/RatanaIMG.jpg";
-import {
-  backendIcons,
-  basicLanguages,
-  databaseIcons,
-  experiences,
-  frontendIcons,
-  otherSkills,
-  skills,
-} from "../db/data";
-import { Experience, IconType } from "../types";
-import ExperienceCard from "./ExperienceCard";
+import profilePic from "/RatanaIMG.jpg";
+import { skills } from "../db/data";
 import Icon from "./Icon";
 
 const Hero = () => {
   return (
     <section
       id="hero"
-      className="text-white flex flex-col min-h-screen mt-20 px-8"
+      className="text-white flex flex-col mt-20"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Text Column */}

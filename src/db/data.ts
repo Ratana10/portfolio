@@ -1,4 +1,4 @@
-import { Experience, IconType } from "../types";
+import { Education, Experience, IconType } from "../types";
 
 export const frontendIcons: IconType[] = [
   {
@@ -122,31 +122,156 @@ export const skills: IconType[] = [
   },
 ];
 
+// export const experiences: Experience[] = [
+//   {
+//     company: "KHMER CODE ACADEMY",
+//     role: "Software Developer",
+//     duration: "May 2024 - Present",
+//     description: ` Developed a Learning Management System (For KCA).
+//       Analyzed and initiated the entire project.
+//       Performed database analysis and normalization.
+//       Implemented backend using Spring Boot and frontend with Next.js.
+//       Authored documents, research papers, and technical reports.`,
+//     skills: ["Spring Boot", "Next.js", "Database Analysis", "Documentation"],
+//     logo: "/logo/khmer_code_academy.jpg",
+//   },
+//   {
+//     company: "Seatincom",
+//     role: "Data Input",
+//     duration: "May 2022 - Jun 2024",
+//     description:
+//     `Performed accurate and efficient data entry tasks,
+//     maintaining high levels of data integrity and confidentiality.`,
+//     "skills": [
+//       "Data Entry",
+//       "Data Management",
+//       "Confidentiality"
+//     ],
+//     logo: "/logo/wnk.png",
+//   },
+//   {
+//     company: "YAKJIN CAMBODIA 2",
+//     role: "Junior Industrial Engineer",
+//     duration: "Oct 2019 - Apr 2020",
+//     description: `
+//       Conducted time study analysis to optimize line balance and resolve bottlenecks.
+//       Measured operator and line efficiency.
+//       Analyzed samples to create Operation Breakdown SMV.
+//       Presented and trained operators on new processes.
+//       Followed up on KPIs and updated garment defect reports for management.
+//     `,
+//     skills: ["Time Study", "Efficiency Analysis", "Training", "KPI"],
+//     logo: "/logo/wnk.png",
+//   },
+// ];
+
 export const experiences: Experience[] = [
   {
-    company: "Neurobit",
-    role: "Frontend Engineer Intern",
-    duration: "June 2023 - Nov 2023",
-    description:
-      "Enhanced user experiences on Neurobit PSG & Hybrid, Portals by resolving bugs & reduced load time by 40%. Built Neurobit Analytics portal using React JS with seamless interaction of REST APIs using AXIOS optimized with React Query. Refactored previous code to TypeScript, updated with new dependency and integrated Vite with Jest for Unit Testing.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJS",
-      "Material UI",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
+    company: "Wnk System",
+    role: "Software Developer",
+    duration: "23-July 2024 - Present",
     logo: "/logo/wnk.png",
+    projects: [
+      {
+        name: "ColdWallet",
+        description: `Developed a secure Cold Wallet application 
+         for managing cryptocurrency assets. 
+         The project involved integrating blockchain technologies to 
+         ensure secure transactions and implementing Java-based backend services. 
+       `,
+        technologies: ["Blockchain", "Crypto Currency", "Java", "Maven"],
+      },
+    ],
   },
   {
-    company: "Flipr Innovations Pvt. Ltd.",
-    role: "DevOps & Fullstack Engineering Intern",
-    duration: "Aug 2023 - Oct 2023",
-    description:
-      "Built Flipr Connect Platforms using React Js integrated GraphQL with AXIOS, created High level Design and Figma design. Built Backend with NodeJS and PostgreSQL.",
-    skills: ["ReactJS", "NodeJS", "GraphQL", "PostgreSQL"],
+    company: "KHMER CODE ACADEMY",
+    role: "Software Developer",
+    duration: "May 2024 - Present",
+    logo: "/logo/khmer_code_academy.jpg",
+    projects: [
+      {
+        name: "Learning Management System",
+        description: `Led the development of an LMS for online education, 
+        handling requirements analysis, database design, 
+        backend implementation with Spring Boot, 
+        and frontend integration with Next.js. 
+        Also authored technical documentation and research papers`,
+        technologies: ["Next.js", "Spring Boot", "PostgreSQL"],
+      },
+      {
+        name: "Telegram Bot for Food Order",
+        description:
+          "Developed a Telegram bot to manage food orders. The bot allowed users to browse menus, place orders, and track order status in real-time. Integrated the bot with a payment gateway and a restaurant management system.",
+        technologies: [
+          "ReactJS",
+          "NextJS",
+          "NestJS",
+          "Telegram API",
+          "Pay Way",
+        ],
+      },
+    ],
+  },
+  {
+    company: "SEANTINCOM",
+    role: "Data Input",
+    duration: "May 2022 - Jun 2024",
     logo: "/logo/wnk.png",
+    projects: [
+      {
+        name: "Data Entry Tasks",
+        description:
+          "Performed accurate and efficient data entry tasks, maintaining high levels of data integrity and confidentiality.",
+        technologies: ["Data Entry", "Data Management", "Confidentiality"],
+      },
+    ],
+  },
+  {
+    company: "YAKJIN CAMBODIA 2",
+    role: "Junior Industrial Engineer",
+    duration: "Oct 2019 - Apr 2020",
+    logo: "/logo/yakjin.png",
+    projects: [
+      {
+        name: "Time Study and Line Balancing",
+        description:
+          "Conducted time study analysis to optimize line balance and resolve bottlenecks. Measured operator and line efficiency. Analyzed samples to create Operation Breakdown SMV. Presented and trained operators on new processes. Followed up on KPIs and updated garment defect reports for management.",
+        technologies: ["Time Study", "Efficiency Analysis", "Training", "KPI"],
+      },
+    ],
+  },
+];
+
+export const educations: Education[] = [
+  {
+    institution: "KHMER CODE ACADEMY",
+    course: "NEXTJS",
+    duration: "May - July 2024",
+    topics: ["Front-end Development", "Nextjs", "Tailwind CSS"],
+  },
+  {
+    institution: "PISETH JAVA",
+    course: "JAVA ADVANCED",
+    duration: "Oct - May 2024",
+    topics: [
+      "Microservice",
+      "Docker Deployment",
+      "Web Client",
+      "Spring Cloud",
+      "Spring Discovery with Eureka Service",
+      "Spring Cloud Gateway",
+      "Spring Config Server",
+    ],
+  },
+  {
+    institution: "SAMSUNG",
+    course: "PYTHON",
+    duration: "2021 - 2022",
+    topics: [
+      "Python Basic",
+      "Data Structures and Algorithms",
+      "OOP",
+      "Exception Handling",
+    ],
   },
 ];
