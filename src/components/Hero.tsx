@@ -39,7 +39,7 @@ const Hero = () => {
             Hi, I am Ratana
           </h1>
           <p className="text-2xl text-white font-bold">
-            I am junior <span className="text-purple-400" ref={subTitleRef}></span>
+            I am <span className="text-purple-400" ref={subTitleRef}></span>
           </p>
           <p className="text-lg">
             I am a motivated and versatile individual, always eager to take on
