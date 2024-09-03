@@ -220,7 +220,7 @@ export const experiences: Experience[] = [
     company: "SEANTINCOM",
     role: "Data Input",
     duration: "May 2022 - Jun 2024",
-    logo: "/logo/wnk.png",
+    logo: "/logo/default.png",
     projects: [
       {
         name: "Data Entry Tasks",

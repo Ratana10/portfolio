@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const navbars = [
   {
@@ -13,7 +14,6 @@ const navbars = [
     label: "Experience",
     href: "#experience",
   },
-
 ];
 
 // {
@@ -34,17 +34,21 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center max-w-screen-xl">
           <a href="#" className="flex items-center">
             <span className="self-center text-3xl font-semibold whitespace-nowrap ">
-            <span className="text-[#FFAF00]">Ratana</span> 
+              <span className="text-[#FFAF00]">Ratana</span>
             </span>
           </a>
-          <div className="flex items-center lg:order-2">
-            <a
-              href="https://github.com/Ratana10"
-              target="_blank"
-              className="text-white bg-gradient-to-r from-purple-500 to-indigo-500 py-1 px-4 rounded-full  hover:from-purple-600 hover:to-indigo-600 transform transition-transform hover:scale-105"
-            >
-              Github
-            </a>
+          <div className="flex flex-row items-center lg:order-2">
+            <div className="mt-1 flex">
+              <a
+                href="https://github.com/Ratana10"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-gradient-to-r from-purple-500 to-indigo-500 py-1 px-4 rounded-full hover:from-purple-600 hover:to-indigo-600 transform transition-transform hover:scale-105 flex items-center"
+              >
+                <FaGithub size={24} className="mr-2" />
+                Github
+              </a>
+            </div>
 
             {/* Mobile Button */}
             <button
