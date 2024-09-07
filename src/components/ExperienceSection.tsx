@@ -11,7 +11,7 @@ const ExperienceSection = () => {
 
       {/* Section Description */}
       <p className="text-lg text-center text-gray-400 mb-12">
-        My work experiences as a software engineer and working on different
+        My work experiences as a software developer and working on different
         companies and projects.
       </p>
 

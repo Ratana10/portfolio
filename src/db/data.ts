@@ -71,6 +71,14 @@ export const otherSkills: IconType[] = [
   },
 ];
 
+export const hero = {
+  description: `
+  I am a motivated and versatile individual, always eager to take on
+  new challenges. With a passion for learning I am dedicated to
+  delivering high-quality results. With a positive attitude and a
+  growth mindset, I am ready to make a meaningful contribution and
+  achieve great things.`,
+};
 export const skills: IconType[] = [
   {
     name: "Blockchain",
@@ -171,9 +179,29 @@ export const skills: IconType[] = [
 
 export const experiences: Experience[] = [
   {
+    company: "Deluxe",
+    role: "Fullstack Developer",
+    duration: "31-Auguest 2024 - Present",
+    work: "Freelance",
+    logo: "/logo/deluxe.png",
+    projects: [
+      {
+        name: "Jewelry Ecomerce Website",
+        description: `
+        Developing an e-commerce platform for a jewelry
+         store with product browsing, cart management, 
+         and order tracking. Integrated a Telegram bot for
+          real-time order status updates based on seller actions, 
+       `,
+        technologies: ["Telegram Bot", "MongoDB", "NextJs", "Prisma"],
+      },
+    ],
+  },
+  {
     company: "Wnk System",
     role: "Software Developer",
     duration: "23-July 2024 - Present",
+    work: "Full Time",
     logo: "/logo/wnk.png",
     projects: [
       {
@@ -191,6 +219,7 @@ export const experiences: Experience[] = [
     company: "KHMER CODE ACADEMY",
     role: "Software Developer",
     duration: "May 2024 - Present",
+    work: "Part Time",
     logo: "/logo/khmer_code_academy.jpg",
     projects: [
       {
@@ -205,7 +234,7 @@ export const experiences: Experience[] = [
       {
         name: "Telegram Bot for Food Order",
         description:
-          "Developed a Telegram bot to manage food orders. The bot allowed users to browse menus, place orders, and track order status in real-time. Integrated the bot with a payment gateway and a restaurant management system.",
+          "Developing a Telegram bot to manage food orders. The bot allowed users to browse menus, place orders, and track order status in real-time. Integrated the bot with a payment gateway and a restaurant management system.",
         technologies: [
           "ReactJS",
           "NextJS",
@@ -220,6 +249,7 @@ export const experiences: Experience[] = [
     company: "SEANTINCOM",
     role: "Data Input",
     duration: "May 2022 - Jun 2024",
+    work: "Full Time",
     logo: "/logo/default.png",
     projects: [
       {
@@ -234,6 +264,7 @@ export const experiences: Experience[] = [
     company: "YAKJIN CAMBODIA 2",
     role: "Junior Industrial Engineer",
     duration: "Oct 2019 - Apr 2020",
+    work: "Full Time",
     logo: "/logo/yakjin.png",
     projects: [
       {

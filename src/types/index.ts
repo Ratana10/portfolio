@@ -11,6 +11,7 @@ export interface Experience{
   company: string;
   role: string;
   duration: string;
+  work: string;
   projects: Project[];
   logo : string;
 }

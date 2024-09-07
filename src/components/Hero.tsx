@@ -1,5 +1,5 @@
 import profilePic from "/RatanaIMG.png";
-import { skills } from "../db/data";
+import { hero, skills } from "../db/data";
 import Icon from "./Icon";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
@@ -10,7 +10,7 @@ const Hero = () => {
 
   useEffect(() => {
     const subtitleOptions = {
-      strings: ["Software Developer", "Java Developer", "Blockchain Developer"],
+      strings: ["Java Developer", "Fullstack Developer", "Software Developer"],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
@@ -42,11 +42,7 @@ const Hero = () => {
             I'm a <span className="text-purple-400" ref={subTitleRef}></span>
           </p>
           <p className="text-lg">
-            I am a motivated and versatile individual, always eager to take on
-            new challenges. With a passion for learning I am dedicated to
-            delivering high-quality results. With a positive attitude and a
-            growth mindset, I am ready to make a meaningful contribution and
-            achieve great things.
+            {hero.description}
           </p>
           <ContactSection />
         </div>

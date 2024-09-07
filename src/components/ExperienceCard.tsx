@@ -75,6 +75,9 @@ const ExperienceCard: React.FC<Props> = ({ experience, isEven }: Props) => {
               <span className="text-sm text-gray-400">
                 {experience.company}
               </span>
+              <span className="text-sm text-gray-500 block">
+                {experience.work}
+              </span>
             </div>
           </div>
           <p className="text-gray-300 mb-4">{experience.duration}</p>
