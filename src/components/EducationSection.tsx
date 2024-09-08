@@ -1,4 +1,3 @@
-import React from "react";
 import { educationDescription, educations } from "../db/data";
 import EducationCard from "./EducationCard";
 
