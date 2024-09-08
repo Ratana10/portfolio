@@ -8,11 +8,15 @@ const navbars = [
   },
   {
     label: "Skill",
-    href: "#skill",
+    href: "#skills",
   },
   {
     label: "Experience",
-    href: "#experience",
+    href: "#experiences",
+  },
+  {
+    label: "Courses",
+    href: "#courses",
   },
 ];
 

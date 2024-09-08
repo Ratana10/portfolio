@@ -206,7 +206,7 @@ export const experiences: Experience[] = [
     projects: [
       {
         name: "ColdWallet",
-        description: `Developed a secure Cold Wallet application 
+        description: `Developing a secure Cold Wallet application 
          for managing cryptocurrency assets. 
          The project involved integrating blockchain technologies to 
          ensure secure transactions and implementing Java-based backend services. 
@@ -277,25 +277,33 @@ export const experiences: Experience[] = [
   },
 ];
 
+export const educationDescription = {
+  title: "Short Courses",
+  description: `
+  My continuous learning journey through specialized short courses,
+  These course hae provide me with hands-on experience in cutting edge technologies
+  prepare for dynamic and evolving industy challenges.
+  `,
+};
 export const educations: Education[] = [
   {
     institution: "KHMER CODE ACADEMY",
     course: "NEXTJS",
     duration: "May - July 2024",
-    logo: "",
+    logo: "/school/khmer_code.jpg",
     topics: ["Front-end Development", "Nextjs", "Tailwind CSS"],
   },
   {
     institution: "PISETH JAVA",
     course: "JAVA ADVANCED",
     duration: "Oct - May 2024",
-    logo: "",
+    logo: "/school/piseth.jpg",
     topics: [
       "Microservice",
       "Docker Deployment",
       "Web Client",
       "Spring Cloud",
-      "Spring Discovery with Eureka Service",
+      "Spring Discovery",
       "Spring Cloud Gateway",
       "Spring Config Server",
     ],
@@ -304,7 +312,7 @@ export const educations: Education[] = [
     institution: "SAMSUNG",
     course: "PYTHON",
     duration: "2021 - 2022",
-    logo: "",
+    logo: "/school/rupp.png",
     topics: [
       "Python Basic",
       "Data Structures and Algorithms",

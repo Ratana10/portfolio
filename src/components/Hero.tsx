@@ -24,12 +24,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="text-white flex flex-col mt-20 ">
+    <section id="about" className="text-white flex flex-col mt-20 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Photo Column  */}
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
           <div className="relative w-48 h-60  overflow-hidden border  rounded-2xl py-2">
-            <img src={profilePic} alt="photo" className=""/>
+            <img src={profilePic} alt="photo" className="" />
           </div>
         </div>
 
@@ -39,17 +39,15 @@ const Hero = () => {
             Hi, I am Ratana
           </h1>
           <p className="text-2xl text-white font-bold">
-            I'm a <span className="text-purple-400" ref={subTitleRef}></span>
+            a Junior <span className="text-purple-400" ref={subTitleRef}></span>
           </p>
-          <p className="text-lg">
-            {hero.description}
-          </p>
+          <p className="text-lg">{hero.description}</p>
           <ContactSection />
         </div>
       </div>
 
       {/* Skill */}
-      <div id="#skill" className="text-center">
+      <div id="skills" className="text-center">
         <h1 className="mt-20 font-extrabold text-5xl">Skills</h1>
         <p className="text-lg text-gray-400 mt-4">
           Here are some of technologies I've been working with
@@ -64,7 +62,6 @@ const Hero = () => {
           ))}
         </div>
       </div>
-
     </section>
   );
 };

@@ -1,18 +1,18 @@
-import ExperienceCard from "./ExperienceCard";
-import { experiences } from "../db/data";
+import React from "react";
+import { educationDescription, educations } from "../db/data";
+import EducationCard from "./EducationCard";
 
-const ExperienceSection = () => {
+const EducationSection = () => {
   return (
-    <section id="experiences" className="relative container mx-auto px-4 mt-20">
+    <section id="courses" className="relative container mx-auto px-4 mt-20">
       {/* Section Title */}
       <h1 className="text-4xl font-bold text-center text-white mb-8">
-        Experiences
+        {educationDescription.title}
       </h1>
 
       {/* Section Description */}
       <p className="text-lg text-center text-gray-400 mb-12">
-        My work experiences as a software developer and working on different
-        companies and projects.
+        {educationDescription.description}
       </p>
 
       {/* Vertical Line */}
@@ -20,10 +20,10 @@ const ExperienceSection = () => {
 
       {/* Experience Cards */}
       <div className="relative space-y-12">
-        {experiences.map((experience: any, index: number) => (
-          <ExperienceCard
+        {educations.map((education: any, index: number) => (
+          <EducationCard
             key={index}
-            experience={experience}
+            education={education}
             isEven={index % 2 === 0}
           />
         ))}
@@ -32,4 +32,4 @@ const ExperienceSection = () => {
   );
 };
 
-export default ExperienceSection;
+export default EducationSection;
