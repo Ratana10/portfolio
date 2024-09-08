@@ -281,7 +281,7 @@ export const educationDescription = {
   title: "Short Courses",
   description: `
   My continuous learning journey through specialized short courses,
-  These course hae provide me with hands-on experience in cutting edge technologies
+  These course has provide me with hands-on experience in cutting edge technologies
   prepare for dynamic and evolving industy challenges.
   `,
 };
