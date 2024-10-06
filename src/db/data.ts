@@ -179,6 +179,26 @@ export const skills: IconType[] = [
 
 export const experiences: Experience[] = [
   {
+    company: "Eagle Law Group",
+    role: "Fullstack Developer",
+    duration: "12-September - 12-Auguest 2024",
+    work: "Freelance",
+    logo: "/logo/eagle.png",
+    projects: [
+      {
+        name: "Eagle Law website",
+        description: `
+        Developed a professional legal website for Eagle Law, 
+          focusing on legal services, client engagement, and SEO optimization.
+          Integrated OpenGraph for better social media sharing.
+          Used Next.js for a scalable and fast frontend, while implementing 
+          custom components for optimal user experience.
+       `,
+        technologies: ["Telegram Bot", "NextJS", "Email notification"],
+      },
+    ],
+  },
+  {
     company: "Deluxe",
     role: "Fullstack Developer",
     duration: "31-Auguest 2024 - Present",
