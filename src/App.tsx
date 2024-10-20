@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import BlockchainAnimation from "./components/BlockchainAnimation";
 import EducationSection from "./components/EducationSection";
@@ -8,8 +9,15 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ParticleBackground from "./components/ParticleBackground";
 import ScrollProgress from "./components/ScrollProgress";
+import ReactGA from "react-ga4";  // Import react-ga4
 
 function App() {
+
+    useEffect(() => {
+      ReactGA.initialize("G-HSCN2HFJZ3");
+      ReactGA.send("pageview");
+    }, []);
+
   return (
     <div className="bg-gray-800">
       <ParticleBackground />
