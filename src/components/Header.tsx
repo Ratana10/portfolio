@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 
 const navbars = [
@@ -27,13 +27,31 @@ const navbars = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 bg-dark">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+        scrolled
+          ? "bg-gray-800 shadow-lg backdrop-blur-md"
+          : "bg-transparent"
+      }`}
+    >
       <nav className="border-gray-200 lg:px-6 py-2.5 container mx-auto px-4">
         <div className="flex flex-wrap justify-between items-center max-w-screen-xl">
           <a href="#" className="flex items-center">
