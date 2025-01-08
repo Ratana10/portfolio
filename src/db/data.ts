@@ -81,6 +81,14 @@ export const hero = {
 };
 export const skills: IconType[] = [
   {
+    name: "Laravel",
+    src: "backend/laravel.png",
+  },
+  {
+    name: "Nuxtjs",
+    src: "frontend/nuxt.png",
+  },
+  {
     name: "Blockchain",
     src: "other/blockchain.png",
   },
@@ -179,9 +187,38 @@ export const skills: IconType[] = [
 
 export const experiences: Experience[] = [
   {
+    company: "G-Devith",
+    role: "Frontend and Devops",
+    duration: "13-Aug 2024 - 2-Feb 2025",
+    work: "Freelance",
+    logo: "/logo/gdevith.png",
+    projects: [
+      {
+        name: "Ecommerce website",
+        description: `
+       The platform supports essential ecommerce functionalities, 
+       including product listings, advanced search and filtering, 
+       secure checkout processes, and automated email notifications 
+       for order updates. Additionally, the system is deployed on a 
+       Virtual Private Server (VPS) to ensure scalability, security, 
+       and uninterrupted availability. This project highlights a focus 
+       on user-friendly design, responsive layouts, and backend efficiency, 
+       enabling both customers and administrators to navigate and manage the platform effortlessly.
+       `,
+        technologies: [
+          "Springboot",
+          "NextJS",
+          "Email notification",
+          "postgres",
+          "VPS",
+        ],
+      },
+    ],
+  },
+  {
     company: "Eagle Law Group",
     role: "Fullstack Developer",
-    duration: "12-September - 12-Auguest 2024",
+    duration: "12-Sep - 12-Aug 2024",
     work: "Freelance",
     logo: "/logo/eagle.png",
     projects: [
@@ -201,7 +238,7 @@ export const experiences: Experience[] = [
   {
     company: "Deluxe",
     role: "Fullstack Developer",
-    duration: "31-Auguest 2024 - Present",
+    duration: "31-Aug - 1-Oct 2024",
     work: "Freelance",
     logo: "/logo/deluxe.png",
     projects: [
@@ -220,7 +257,7 @@ export const experiences: Experience[] = [
   {
     company: "Wnk System",
     role: "Software Developer",
-    duration: "23-July 2024 - Present",
+    duration: "23-July - 1-Sep 2024",
     work: "Full Time",
     logo: "/logo/wnk.png",
     projects: [
