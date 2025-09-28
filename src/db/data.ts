@@ -142,6 +142,29 @@ export const skills: IconType[] = [
   },
 ];
 
+export const tools: IconType[] = [
+  {
+    name: "Docker",
+    src: "tools/docker.png",
+  },
+  {
+    name: "Git",
+    src: "tools/git.png",
+  },
+  {
+    name: "Github",
+    src: "tools/github.png",
+  },
+  {
+    name: "Gitlab",
+    src: "tools/gitlab.png",
+  },
+  {
+    name: "Postman",
+    src: "tools/postman.svg",
+  },
+];
+
 // export const experiences: Experience[] = [
 //   {
 //     company: "KHMER CODE ACADEMY",

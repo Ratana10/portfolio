@@ -1,9 +1,10 @@
 import profilePic from "/RatanaIMG.png";
-import { hero, skills } from "../db/data";
+import { hero, skills, tools } from "../db/data";
 import Icon from "./Icon";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import ContactSection from "./ContactSection";
+import { IconType } from "../types";
 
 const Hero = () => {
   const subTitleRef = useRef(null);
@@ -39,7 +40,7 @@ const Hero = () => {
             Hi, I am Ratana
           </h1>
           <p className="text-2xl text-white font-bold">
-            a Junior <span className="text-purple-400" ref={subTitleRef}></span>
+            a <span className="text-purple-400" ref={subTitleRef}></span>
           </p>
           <p className="text-lg">{hero.description}</p>
           <ContactSection />
@@ -57,7 +58,24 @@ const Hero = () => {
       {/* Icons */}
       <div className="flex flex-col items-center mt-10">
         <div className="flex flex-wrap justify-center gap-4">
-          {skills.map((item: any, index: number) => (
+          {skills.map((item: IconType, index: number) => (
+            <Icon key={index} name={item.name} src={item.src} />
+          ))}
+        </div>
+      </div>
+
+       {/* Skill */}
+      <div id="skills" className="text-center">
+        <h1 className="mt-20 font-extrabold text-5xl">Tools</h1>
+        <p className="text-lg text-gray-400 mt-4">
+          Here are some of tools I've been working with
+        </p>
+      </div>
+
+      {/* Icons */}
+      <div className="flex flex-col items-center mt-10">
+        <div className="flex flex-wrap justify-center gap-4">
+          {tools.map((item: IconType, index: number) => (
             <Icon key={index} name={item.name} src={item.src} />
           ))}
         </div>
